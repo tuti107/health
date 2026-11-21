@@ -29,13 +29,14 @@
 1. 本人がスクショを送る → 該当月の running/YYYY-MM.md の表に1行追加。
 2. 行には日付・種目・距離/時間・ペース/心拍・気象と所感・前回比の読みを書く。本人のひと言は「本人申告」として残す。
 3. 健康イベントは medical-history.md、VO2max は vitals/vo2max.md も更新する。
-4. commit して作業ブランチに push してから、短く報告する。
+4. commit して作業ブランチに push し、デフォルトブランチにも push してから、短く報告する。
+   `git push origin claude/previous-session-error-bln0t9:claude/running-records-import-m4fwag`
 
 ## ブランチ（今後ずっと守ること）
 
 - 起点ブランチ兼デフォルトブランチ `claude/running-records-import-m4fwag` は、削除・改名・force push をしない。提案もしない。
 - ほかのブランチを消すときは、別のセッションの起点になっていないか本人に確認する。
-- 作業ブランチは `claude/previous-session-error-bln0t9`。区切りごとに push する。
+- 作業ブランチは `claude/previous-session-error-bln0t9`。区切りごとに push し、続けてデフォルトブランチにも早送りで push する。
 - 作業の区切りごと、重要な指示が出たときに、このファイルと docs/handoff.md を更新して push する。
 - 迷ったら実行せず、本人に確認する。
 
@@ -44,4 +45,4 @@
 - 腰痛（9/22〜）は治癒。コアトレは通常量に復帰。VO2max 42.1（10/26）。
 - 11月は週25〜30kmのベース維持。11/16〜22 週は走行3本15.6km＋コアトレ。
 - 残課題：フェブキソスタット終了後の血液検査（未予約の可能性）、11月の月間サマリー、凍結路面への対応。
-- 作業ブランチの成果はデフォルトブランチ未取り込み（PRなし）。取り込み方法は本人に確認してから決める。
+- 取り込み方法は「デフォルトブランチへ直接 push」（2026-11-21 本人決定、PRは使わない）。早送りのみ、force push はしない。
